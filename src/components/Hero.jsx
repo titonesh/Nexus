@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { HERO_CONTENT } from '../utils/constants';
 import { FaArrowDown } from 'react-icons/fa';
+import titoPhoto from '../assets/tito.png';
 import './Hero.css';
 
 /**
@@ -48,12 +49,7 @@ function Hero() {
         {/* Hero Image Placeholder */}
         <div className={`hero__image ${isVisible ? 'hero__image--visible' : ''}`}>
           <div className="hero__image-placeholder">
-            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-              <rect width="400" height="300" fill="#f0f4ff" />
-              <circle cx="200" cy="150" r="80" fill="#3B82F6" opacity="0.1" />
-              <circle cx="150" cy="100" r="50" fill="#10B981" opacity="0.1" />
-              <circle cx="280" cy="200" r="60" fill="#F59E0B" opacity="0.1" />
-            </svg>
+            <img src={titoPhoto} alt="Profile" className="hero__profile-image" />
           </div>
         </div>
       </div>

@@ -83,11 +83,11 @@ export const ABOUT_CONTENT = {
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    title: "CEO at TechFlow",
+    name: "Tito Mwiti",
+    title: "Founder & Product Lead",
     quote: "Nexus transformed how our team works. We increased productivity by 40% within the first month.",
     rating: 5,
-    image: "/avatar-1.jpg"
+    image: null
   },
   {
     id: 2,
@@ -95,7 +95,7 @@ export const TESTIMONIALS = [
     title: "Product Manager at DataViz",
     quote: "The best platform I've ever used. Customer support is exceptional, and the features are incredibly intuitive.",
     rating: 5,
-    image: "/avatar-2.jpg"
+    image: null
   },
   {
     id: 3,
@@ -103,7 +103,7 @@ export const TESTIMONIALS = [
     title: "Founder of DevTools Inc",
     quote: "Outstanding solution. It's reliable, scalable, and has all the features we need to grow.",
     rating: 5,
-    image: "/avatar-3.jpg"
+    image: null
   }
 ];
 

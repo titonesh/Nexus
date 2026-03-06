@@ -96,9 +96,10 @@
   overflow: hidden;
 }
 
-.hero__image-placeholder svg {
+.hero__profile-image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 /* Scroll Indicator */
