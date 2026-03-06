@@ -1,0 +1,194 @@
+/* Contact Form Section Styles */
+.contact-form {
+  background: linear-gradient(
+    135deg,
+    var(--background-gray) 0%,
+    var(--background-light) 100%
+  );
+}
+
+.contact-form__wrapper {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form__header {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.contact-form__title {
+  font-size: var(--font-size-4xl);
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-form__intro {
+  font-size: var(--font-size-lg);
+  color: var(--text-light);
+  margin-bottom: 0;
+}
+
+/* Form */
+.contact-form__form {
+  background: white;
+  padding: var(--spacing-2xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+/* Form Groups */
+.contact-form__form .form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-form__label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-dark);
+  font-size: var(--font-size-sm);
+}
+
+/* Inputs */
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  color: var(--text-dark);
+  transition: all var(--transition-fast);
+  background-color: var(--background-light);
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.contact-form__input:disabled,
+.contact-form__textarea:disabled {
+  background-color: var(--background-gray);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.contact-form__input.error,
+.contact-form__textarea.error {
+  border-color: var(--error-color);
+}
+
+.contact-form__input.error:focus,
+.contact-form__textarea.error:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.contact-form__textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Checkbox Group */
+.contact-form__checkbox-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-form__checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--font-size-sm);
+  color: var(--text-dark);
+  gap: var(--spacing-sm);
+}
+
+.contact-form__checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  cursor: pointer;
+  accent-color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.contact-form__checkbox:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Status Messages */
+.contact-form__success-message {
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success-color);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--success-color);
+  animation: slideInUp var(--transition-base);
+}
+
+.contact-form__error-message {
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--error-color);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--error-color);
+  animation: slideInUp var(--transition-base);
+}
+
+/* Submit Button */
+.contact-form__submit {
+  width: 100%;
+  margin-top: var(--spacing-md);
+}
+
+.contact-form__submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+
+  .contact-form__form {
+    padding: var(--spacing-lg);
+  }
+
+  .contact-form__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .contact-form__intro {
+    font-size: var(--font-size-base);
+  }
+
+  .contact-form__input,
+  .contact-form__textarea {
+    font-size: 16px; /* Prevents zoom on mobile */
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-form__form {
+    padding: var(--spacing-md);
+  }
+
+  .contact-form__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .contact-form__checkbox-label {
+    font-size: var(--font-size-xs);
+  }
+}
